@@ -1,0 +1,375 @@
+/* ================================= 
+  Base Element Styles
+==================================== */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  color: #000;
+  background-color: #fff;
+}
+
+header {
+  background-color: #fff;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 1em;
+}
+
+
+.col {
+  display: block;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+  margin: auto;
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+
+.container {
+  width: 100%;
+  padding-bottom: 1.5em;
+  text-align: center;
+}
+
+
+ul {
+  list-style: none;
+  padding-left: 0;
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  line-height: 1.38em;
+}
+
+p {
+color: #000;
+font-family: 'Roboto', sans-serif;
+text-align: center;
+padding-bottom: 5px;
+}
+
+
+.email-link {
+  text-transform: lowercase;
+  padding: .5em;
+}
+
+
+.navigation-bar {
+  font-family: Roboto, Arial, Verdana;
+  font-weight: 400;
+  letter-spacing: .05em;
+  background-color: #fff;
+  padding: 25px;
+  
+  text-align: center;
+	padding-top: 1.5em;
+	padding-bottom: 1.5em;
+	background: #fff;
+  margin-bottom: 30px;
+}
+
+footer {
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+  width: 100%;
+  text-decoration: none;
+  text-align: center;
+  font-size: .8em;
+  padding: .5em;
+}
+
+/* .more-info {
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 1em;
+  text-align: center;
+
+} */
+
+.contact {
+  text-transform: uppercase; 
+  font-size: 25px;
+}
+
+.footer-nav {
+  display: inline-block;
+  text-align: center;
+  font-size: .8em;
+  width: auto;
+  padding: 0;
+  margin: 0;
+  float: right;
+}
+
+li {
+  display: block;
+}
+
+
+p {
+	font-size: .95em;
+	margin-bottom: 1.8em;
+}
+
+h2,
+h3,
+a {
+  color: #000000;
+  margin-top: 0;
+}
+
+h1,
+h2 {
+  text-align: center;
+  font-weight: bold;
+}
+
+h3 {
+  text-align: center;
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+}
+
+
+/* ================================= 
+  Base Layout Styles
+==================================== */
+
+/* ---- Navigation ---- */
+
+.name {
+	font-size: 1.25em;
+  text-align: center;
+  margin-top: 10px;
+}
+/* 
+.headline {
+ margin-left: 0;
+ text-align: center;
+ font-size: 17px;
+line-height: 1.5em;
+padding: .5em;
+} */
+
+
+.main-nav {
+	font-size: 1em;
+	color: #000000;
+  text-transform: uppercase;
+  list-style-type: none;
+  /* margin: 0.3em auto; */
+  /* padding: 0px; */
+}
+
+
+.main-nav a:hover {
+	color: #093a58;
+}
+
+.top {
+  width: 50%;  
+  float: right; 
+}
+
+
+/* ---- Layout Containers ---- */
+
+
+
+.footer {
+	background:#fff;
+}
+
+.footer-name {
+  float: left;
+  font-weight: bold;
+  display: inline;
+}
+
+.footer-nav {
+  font-weight: bold;
+  float: right;
+  list-style-type: none;
+  margin: 0;
+  padding: 0px;
+  display: inline;
+}
+
+
+/* ---- Page Elements ---- */
+
+#portfolio {
+  text-align: center;
+}
+
+.logo {
+	width: 190px;
+}
+
+#contact {
+  text-align: center;
+}
+
+.contact-info {
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+  width: auto;
+  text-decoration: none;
+  text-align: center;
+  font-size: .8em;
+  }
+
+
+ .profile {
+  margin-top: 1em;
+  margin-bottom: 1em;
+ }
+
+
+ .invisible {
+  display: none; 
+}
+
+  /* ================================= 
+    Media Queries
+  ==================================== */
+
+    /* ----  Tablet  ---- */
+
+  
+  @media (min-width: 768px) {
+  
+  .footer-nav {
+    display: inline-block;
+  }
+
+  .footer-nav li {
+    display: inline; 
+    font-size: 18px; 
+    padding-right: 20px; 
+}
+
+.invisible {
+  display: inline-block; 
+  width: 74%; 
+  float: right; 
+}
+
+    
+    .main-nav li {
+      display: inline; 
+        font-size: 18px; 
+        padding-right: 20px;
+    }
+  
+    .profile {
+      width: 40%;
+      float: right;
+      margin: 40px;
+      margin-top: -2em;
+    }
+  
+
+    .top {
+      display: none;
+  }
+  
+  .container {
+    width: 95%;
+    margin: 0 auto;
+    padding-bottom: 1.5em;
+    text-align: center;
+  }
+
+  .col {
+    float: left;
+    width: 50%;
+    text-align: center;
+    padding: 1em;
+    min-height: 400px;
+  }
+
+
+  .clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+}
+
+    /* ----  Desktop  ---- */
+
+  
+  @media (min-width: 1024px) {
+  
+  
+    .name {
+      float: left;
+      display: inline;
+    }
+    
+    .headline {
+      margin-left: 1em;
+      margin-right: 3em;
+      text-align: left;
+    }
+  
+    .profile {
+      width: 400px;
+      margin-top: -5em;
+      float: right;
+      min-height: 50px;
+      padding-top: 10px;
+    }
+   
+    .main-nav {
+      float: right;
+      font-size: 10px;
+      padding: 0 0.5px 0 0;
+    }
+
+    .navigation-bar {
+      margin-bottom: 100px;
+    }
+
+    .col {
+      float: left;
+      width: 33.33%;
+      text-align: center;
+    }
+    
+    .container {
+      width: 95%;
+      max-width: 1150px;
+      }
+
+      .clearfix::after {
+        content: " ";
+        display: table;
+        clear: both;
+      }
+    }
